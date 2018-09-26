@@ -23,9 +23,10 @@
  * JavaScript
  * jQuery
  * HTML/CSS
- * Inquire NPM Package(https://www.npmjs.com/package/inquirer)
+ * Body-parser NPM Package(https://www.npmjs.com/package/body-parser)
  * MYSQL NPM Package (https://www.npmjs.com/package/mysql)
  * Express NPM Package (https://www.npmjs.com/package/express)
+ * Handlebars NPM Package (https://www.npmjs.com/package/handlebars)
 
 ## Prerequisites
 
