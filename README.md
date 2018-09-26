@@ -5,16 +5,17 @@
 ## Getting Started
 
  * Install node.js/npm
+ * Clone repo
  * Run NPM install
- * Run command depending which mode you woule like to be on"
-   * Customer - 'node customerBamazon.js'
-   * Manager - 'node managerBamazon.js'
- * Run 'ctrl + c' to exit each mode
+ * Set up mysql database and run schema/seed files
+ * node server.js
+ * localhost:3000 on your browser
+
 
      
 ## Demo Videos
 
- * bamazonCustomer.js (https://youtu.be/4rlSLSu-vhA)
+ * 
  
 ## Technologies Used
 
@@ -29,7 +30,7 @@
 ## Prerequisites
 
  - Node.js - Download the latest version of Node https://nodejs.org/en/
- - Create a MYSQL database called 'Bamazon', reference schema.sql
+ - Create a MYSQL database called 'burgers_db', reference schema.sql
 
 ## Built With
 
