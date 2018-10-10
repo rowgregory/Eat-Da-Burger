@@ -1,53 +1,60 @@
 <h1>Ride da Coaster</h1>
 
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div id="add">
+                <h2>Add a Coaster: </h2>
 
-<div id="available">
-    <h2>Coasters available to ride: </h2>
-    <ul>
-        {{#each burgers}} {{#unless this.devoured}}
-        <li>
-             {{this.burger_name}}
-
-            <form action="/burgers/{{this.id}}" method="POST">
-                <input type="hidden" name="devoured">
-                <button id="eatMe" class="btn" type="submit" name="action">Ride Me!</button>
-            </form>
-        </li>
-        {{/unless}} {{/each}}
-    </ul>
-</div>
-
-<div id="devoured">
-    <h2>Coasters That Have Been Ridden: </h2>
-
-    {{#each burgers}}
-    {{#if this.devoured}}
-    {{#unless this.deleted}}
-    <div class="input-group">
-        <li class="form-control">{{this.id}}. {{this.burger_name}}</li>
-        <form action="/delete/{{this.id}}" method="POST">
-            <button class="btn" type="submit" name="action">Delete</button>
-        </form>
-    </div>
-    {{/unless}}
-    {{/if}}
-    {{/each}}
-    
-</div>
-
-
-        
-              
-            
-
-<div id="add">
-    <h2>Add a Coaster: </h2>
-
-    <form class="create-update-form" action="/burgers" method="POST">
-        <div class="form-group">
-            <label for="newB">Burger Name:</label>
-            <input type="text" id="newB" name="burger_name">
+                <form class="create-update-form" action="/burgers" method="POST">
+                    <div class="form-group">
+                        <label for="newB">Coaster Name:</label>
+                        <input type="text" id="newB" name="burger_name">
+                    </div>
+                    <button id="btnSubmit" class="submit" type="submit">Add Coaster</button>
+                </form>
+            </div>
         </div>
-        <button id="btnSubmit" class="submit" type="submit">Add Coaster</button>
-    </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-around">
+        <div class="col-6">
+            <div id="available">
+                <h2>Coasters available to ride</h2>
+
+                {{#each burgers}} {{#unless this.devoured}}
+
+                <form action="/burgers/{{this.id}}" method="POST">
+                    <input type="hidden" name="devoured">
+                    <button id="rideMe" class="btn" type="submit" name="action">{{this.burger_name}}</button>
+                </form>
+
+                {{/unless}} {{/each}}
+
+            </div>
+        </div>
+        
+        <div class="col-6">
+            <div id="devoured">
+                <h2>Coasters That Have Been Ridden</h2>
+
+                {{#each burgers}}
+                {{#if this.devoured}}
+                {{#unless this.deleted}}
+
+                <div class="input-group">
+                    <li class="form-control">{{this.burger_name}}</li>
+                    <form action="/delete/{{this.id}}" method="POST">
+                        <button class="btn" type="submit" name="action">Delete</button>
+                    </form>
+                </div>
+                {{/unless}}
+                {{/if}}
+                {{/each}}
+
+            </div>
+        </div>
+    </div>
 </div>

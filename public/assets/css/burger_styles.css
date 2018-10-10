@@ -10,7 +10,52 @@ body{
 
 h2 {
     background: rgba(0,0,0,0.5);
-    color:white;
+    color:red;
     font-family:Arial, Helvetica, sans-serif;
     margin:0 auto;
+    border-radius: 20px 20px 0 0;
 }
+
+h1 {
+    text-align:center;
+    background: rgba(37, 73, 107, 0.7);
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 25px;
+    margin-top: 0px;
+}
+
+#add {
+    background: rgba(37, 73, 107, 0.7);
+    text-align:center;
+    /* width: 60vw; */
+    margin: 20px auto;
+    font-family:Arial, Helvetica, sans-serif;
+    border:black 1px solid;
+    border-radius: 20px 20px 0 0;
+}
+
+#btnSubmit {
+    background: orange;
+    font-size:16px;
+    border:none;
+    padding:10px;
+    border-radius:7px;
+    margin: 20px;
+    cursor:pointer;
+}
+
+.create-update-form{
+    margin:20px;
+    color:white;
+}
+
+#burger_name {
+    font-size:20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+  
