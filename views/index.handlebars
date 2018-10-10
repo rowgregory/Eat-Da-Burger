@@ -1,59 +1,63 @@
-<h1>Ride da Coaster</h1>
+<h1 id="rideDa">Ride da Coaster</h1>
+
 
 <div class="container">
-    <div class="row">
-        <div class="col">
-            <div id="add">
-                <p>Add a Coaster</p>
+    <div id="_bg">
+        <div class="row">
+            <div class="col">
+                <div id="add">
+                    <p>Add a Coaster</p>
 
-                <form class="create-update-form" action="/burgers" method="POST">
-                    <div class="form-group">
-                        <label id="coasterName" for="newB">Coaster Name:</label>
-                        <input type="text" id="newB" name="burger_name">
-                    </div>
-                    <button id="btnSubmit" class="submit" type="submit">Add Coaster</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row justify-content-around">
-        <div class="col-6">
-            <div id="available">
-                <p>Coasters available to ride</p>
-
-                {{#each burgers}} {{#unless this.devoured}}
-
-                <form action="/burgers/{{this.id}}" method="POST">
-                    <input type="hidden" name="devoured">
-                    <button id="rideMe" class="btn" type="submit" name="action">{{this.burger_name}}</button>
-                </form>
-
-                {{/unless}} {{/each}}
-
-            </div>
-        </div>
-        
-        <div class="col-6">
-            <div id="devoured">
-                <p>Coasters That Have Been Ridden</p>
-
-                {{#each burgers}}
-                {{#if this.devoured}}
-                {{#unless this.deleted}}
-
-                <div class="input-group">
-                    <li class="form-control">{{this.burger_name}}</li>
-                    <form action="/delete/{{this.id}}" method="POST">
-                        <button class="btn" type="submit" name="action">Delete</button>
+                    <form class="create-update-form" action="/burgers" method="POST">
+                        <div class="form-group">
+                            <label id="coasterName" for="newB">Coaster Name:</label>
+                            <input type="text" id="newB" name="burger_name">
+                        </div>
+                        <button id="btnSubmit" class="submit" type="submit">Add Coaster</button>
                     </form>
                 </div>
-                {{/unless}}
-                {{/if}}
-                {{/each}}
+            </div>
+        </div>
 
+
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-6">
+                    <div id="available">
+                        <p>Coasters available to ride</p>
+
+                        {{#each burgers}} {{#unless this.devoured}}
+
+                        <form action="/burgers/{{this.id}}" method="POST">
+                            <input type="hidden" name="devoured">
+                            <button id="rideMe" class="btn" type="submit" name="action">{{this.burger_name}}</button>
+                        </form>
+
+                        {{/unless}} {{/each}}
+
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div id="devoured">
+                        <p>Coasters that have been ridden</p>
+
+                        {{#each burgers}}
+                        {{#if this.devoured}}
+                        {{#unless this.deleted}}
+
+                        <div class="input-group">
+                            <li id="deleteCoaster" class="form-control">{{this.burger_name}}</li>
+                            <form action="/delete/{{this.id}}" method="POST">
+                                <button class="btn" type="submit" name="action">Delete</button>
+                            </form>
+                        </div>
+                        {{/unless}}
+                        {{/if}}
+                        {{/each}}
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
