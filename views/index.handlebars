@@ -4,11 +4,11 @@
     <div class="row">
         <div class="col">
             <div id="add">
-                <h2>Add a Coaster: </h2>
+                <p>Add a Coaster</p>
 
                 <form class="create-update-form" action="/burgers" method="POST">
                     <div class="form-group">
-                        <label for="newB">Coaster Name:</label>
+                        <label id="coasterName" for="newB">Coaster Name:</label>
                         <input type="text" id="newB" name="burger_name">
                     </div>
                     <button id="btnSubmit" class="submit" type="submit">Add Coaster</button>
@@ -22,7 +22,7 @@
     <div class="row justify-content-around">
         <div class="col-6">
             <div id="available">
-                <h2>Coasters available to ride</h2>
+                <p>Coasters available to ride</p>
 
                 {{#each burgers}} {{#unless this.devoured}}
 
@@ -38,7 +38,7 @@
         
         <div class="col-6">
             <div id="devoured">
-                <h2>Coasters That Have Been Ridden</h2>
+                <p>Coasters That Have Been Ridden</p>
 
                 {{#each burgers}}
                 {{#if this.devoured}}

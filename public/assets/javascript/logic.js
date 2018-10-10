@@ -5,13 +5,17 @@
 //     console.log(burger_name);
 // })
 
-$('.submitCoaster').on('click', function() {
+
+// $('#btnSubmit').on('click', function() {
     
-    event.preventDefault();
-    var input = $('#newB').val().trim();
-    if (!input) {
-        alert('Please create coaster!');
-    }
+//     event.preventDefault();
+//     var input = $('#newB').val().trim();
+//     if (!input) {
+//         alert('Please create coaster!');
+//     } 
+
     
-})
+    
+    
+// })
 
