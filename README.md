@@ -19,9 +19,9 @@
      
 ## Demo Videos
 
- * https://youtu.be/ikEn6P9XhhM
+ * [Demonstration](https://youtu.be/ikEn6P9XhhM)
 
- * ![](assets/images/Ride-Da-Coaster_gif.gif?raw=true)
+ * ![](public/assets/img/Ride-Da-Coaster_gif.gif?raw=true)
  
 ## Technologies Used
 
