@@ -1,6 +1,6 @@
-# Eat-Da-Burger
+# Ride Da Coaster
 
- * Eat-Da-Burger is a burger logger built with MySQL, Node, Express, Handlebars and a homemade ORM (yum!).
+ * Eat-Da-Burger is a burger logger built with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). This app allows users to create their own coaster, ride it, and delete it!
 
 ## Getting Started
 
@@ -11,9 +11,15 @@
  * node server.js
  * localhost:3000 on your browser
 
+## Visit live on heroku
 
+ **[Ride Da Coaster](https://salty-castle-44301.herokuapp.com/)**
+
+ !(public/assets/img/ride_da_coaster_screenshot.png)
      
 ## Demo Videos
+
+ * 
 
  * 
  
@@ -22,6 +28,7 @@
  * Node.js
  * JavaScript
  * jQuery
+ * Bootstrap
  * HTML/CSS
  * Body-parser NPM Package(https://www.npmjs.com/package/body-parser)
  * MYSQL NPM Package (https://www.npmjs.com/package/mysql)
