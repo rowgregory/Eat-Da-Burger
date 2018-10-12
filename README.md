@@ -13,9 +13,9 @@
 
 ## Visit live on heroku
 
- **[Ride Da Coaster](https://salty-castle-44301.herokuapp.com/)**
+ * [Ride Da Coaster](https://salty-castle-44301.herokuapp.com/)
 
- ![](public/assets/img/ride_da_coaster_screenshot.png)
+ * ![](public/assets/img/ride_da_coaster_screenshot.png)
      
 ## Demo Videos
 
