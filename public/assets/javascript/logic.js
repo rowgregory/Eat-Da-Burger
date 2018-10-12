@@ -9,13 +9,17 @@
 // $('#btnSubmit').on('click', function() {
     
 //     event.preventDefault();
-//     var input = $('#newB').val().trim();
-//     if (!input) {
-//         alert('Please create coaster!');
-//     } 
+
+//     for(var i = 0; i <)
+    
+//     $('.text-center').addClass('animated rubberBand infinite');
+    
+
 
     
     
     
 // })
+
+
 
