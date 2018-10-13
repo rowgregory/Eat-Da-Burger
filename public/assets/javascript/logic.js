@@ -23,8 +23,6 @@ $(function () {
         animated: 'fade',
         placement: 'bottom'
       });
-    
+    })
  
-
-
 
