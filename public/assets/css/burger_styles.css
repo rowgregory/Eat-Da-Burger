@@ -100,9 +100,24 @@ p {
     width: 300px;
 }
 
-
-
-
-
+.tooltip.left .tooltip-inner{
+ 
+    max-width:310px;
+     
+    padding:3px 8px;
+     
+    color:#000;
+     
+    text-align:center;
+     
+    background-color:#FF9A35;
+     
+    -webkit-border-radius:4px;
+     
+    -moz-border-radius:4px;
+     
+    border-radius:4px
+     
+    }
 
   

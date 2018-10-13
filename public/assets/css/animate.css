@@ -2277,8 +2277,8 @@
 
 @-webkit-keyframes lightSpeedIn {
   from {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    -webkit-transform: translate3d(-100%, 0, 0) skewX(-30deg);
+    transform: translate3d(-100%, 0, 0) skewX(-30deg);
     opacity: 0;
   }
 
@@ -2301,8 +2301,8 @@
 
 @keyframes lightSpeedIn {
   from {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    -webkit-transform: translate3d(-100%, 0, 0) skewX(-30deg);
+    transform: translate3d(-100%, 0, 0) skewX(-30deg);
     opacity: 0;
   }
 

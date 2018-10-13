@@ -31,7 +31,7 @@
                         <form class="text-center toolTip" action="/burgers/{{this.id}}" method="POST">
                             
                             <input type="hidden" name="devoured">
-                            <button id="rideMe" class="btn" type="submit" name="action">{{this.burger_name}}</button>
+                            <button id="rideMe" class="btn" type="submit" name="action" data-toggle="tooltip" data-placement="right" data-html="true" title="Click to ride!">{{this.burger_name}}</button>
                             
                         </form>
                         
@@ -59,7 +59,7 @@
                         
                         <form class="text-center" action="/delete/{{this.id}}"method="POST">
                             
-                            <button id="deleteCoaster" class="btn" type="submit" name="action">{{this.burger_name}}</button>
+                            <button id="deleteCoaster" class="btn" type="submit" name="action"  data-toggle="tooltip" data-placement="right" data-html="true" title="Click to delete!">{{this.burger_name}}</button>
                         </form>
 
                         {{/unless}}

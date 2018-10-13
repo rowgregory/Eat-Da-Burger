@@ -14,12 +14,17 @@
     
 //     $('.text-center').addClass('animated rubberBand infinite');
     
-
-
-    
-    
-    
 // })
+
+console.log('HELLO WORLD');
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip({
+        animated: 'fade',
+        placement: 'bottom'
+      });
+    
+ 
 
 
 
