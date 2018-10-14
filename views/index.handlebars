@@ -1,13 +1,13 @@
-<h1 class="animated lightSpeedIn 1" id="rideDa">Ride da Coaster</h1>
-
+<div class="container">
+    <h1 class="animated lightSpeedIn 1" id="rideDa">Ride da Coaster</h1>
+</div>
 
 <div class="container">
     <div id="_bg">
         <div class="row">
             <div class="col">
                 <div id="add">
-                    <p >Add a Coaster</p>
-
+                    <p>Add a Coaster</p>
                     <form class="create-update-form" action="/burgers" method="POST">
                         <div class="form-group">
                             <label id="coasterName" for="newB"></label>
@@ -29,17 +29,18 @@
                         {{#each burgers}} {{#unless this.devoured}}
 
                         <form class="text-center toolTip" action="/burgers/{{this.id}}" method="POST">
-                            
+
                             <input type="hidden" name="devoured">
-                            <button id="rideMe" class="btn btn-secondary" type="submit" name="action" data-toggle="tooltip" data-placement="right" data-html="true" title="Click to ride!">{{this.burger_name}}</button>
-                            
+                            <button id="rideMe" class="btn btn-secondary" type="submit" name="action" data-toggle="tooltip"
+                                data-placement="right" data-html="true" title="Click to ride!">{{this.burger_name}}</button>
+
                         </form>
-                        
+
 
                         {{/unless}} {{/each}}
 
                     </div>
-                    
+
                 </div>
 
                 <div class="col-6">
@@ -50,16 +51,10 @@
                         {{#if this.devoured}}
                         {{#unless this.deleted}}
 
-                        {{!-- <div class="input-group">
-                            <li id="deleteCoaster" class="form-control">{{this.burger_name}}</li>
-                            <form action="/delete/{{this.id}}" method="POST">
-                                <button class="btn" type="submit" name="action">Delete</button>
-                            </form>
-                        </div> --}}
-                        
-                        <form class="text-center" action="/delete/{{this.id}}"method="POST">
-                            
-                            <button id="deleteCoaster" class="btn btn-secondary" type="submit" name="action"  data-toggle="tooltip" data-placement="right" data-html="true" title="Click to delete!">{{this.burger_name}}</button>
+                        <form class="text-center" action="/delete/{{this.id}}" method="POST">
+
+                            <button id="deleteCoaster" class="btn btn-secondary" type="submit" name="action"
+                                data-toggle="tooltip" data-placement="right" data-html="true" title="Click to delete!">{{this.burger_name}}</button>
                         </form>
 
                         {{/unless}}
